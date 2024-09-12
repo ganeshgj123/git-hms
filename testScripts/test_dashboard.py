@@ -14,6 +14,9 @@ def test_tc1_added_doctor_specialisation(pages,driver,username,password,doctor_s
     pages.admin_dashbordpage.create_doctor_specialisation(doctor_specialisation)
     assert pages.admin_dashbordpage.verify_created_doctor_specialisation() == True
 
+
+
+
 @mark.parametrize("username,password",[("admin","Test@12345")])
 def test_tc2_doctor_update_specialisation(pages,driver,username,password):
     pages.homepage.admin_login()
