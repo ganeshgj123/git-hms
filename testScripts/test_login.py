@@ -7,8 +7,6 @@ date_str = datetime.now().strftime("%d-%m-%Y_%H-%M-%S")
 
 
 
-
-
 headers = read_headers("login","test_user_login")
 data = read_data("login","test_user_login")
 
